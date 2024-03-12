@@ -1,0 +1,18 @@
+<h3>Informacion del Encuestado</h3>
+<form name="encuestaForm" ng-submit="enviarEncuesta()" class="well" style="margin-right: 50px;">
+
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" ng-model="encuesta.email" required class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="estiloMusical">Estilo Musical:</label>
+    <select id="estiloMusical" name="estiloMusical" ng-model="encuesta.estiloMusical" required class="form-control"
+            ng-options="estilo.id as estilo.musicSpecification for estilo in estilosMusicales">
+      <option value="">Seleccionar Estilo Musical</option>
+    </select>
+  </div>
+
+  <button type="submit" ng-disabled="encuestaForm.$invalid" class="btn btn-primary">Siguiente</button>
+</form>

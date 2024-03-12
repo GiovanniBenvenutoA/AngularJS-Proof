@@ -1,0 +1,46 @@
+<!-- step-cero.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta</title>
+  <style>
+    .section p::before {
+      content: '\2022'; /* Código Unicode para el carácter de viñeta (punto) */
+      margin-right: 0.5em;
+    }
+  </style>
+</head>
+<body>
+
+  <h3 class="text-center">Informacion sobre Encuesta</h3>
+  <form name="encuestaForm" ng-submit="siguientePaso()" class="well" class="well">
+
+    <div class="section">
+      <h3 class="section-title">Información del Participante</h3>
+      <p>Solo se solicitara tu correo electronico el cual es solo para tener un registro.</p>
+    </div>
+
+    <div class="section">
+      <h3 class="section-title">Privacidad y Confidencialidad</h3>
+      <p>Sus respuestas son confidenciales y se utilizarán únicamente con fines de investigación.</p>
+      <p>No compartiremos su información personal con terceros.</p>
+    </div>
+
+    <div class="section">
+      <h3 class="section-title">Privacidad y Confidencialidad</h3>
+      <p>Sus respuestas son confidenciales y se utilizarán únicamente con fines de investigación.</p>
+      <p>No compartiremos su información personal con terceros.</p>
+    </div>
+
+    <div class="section">
+      <h3 class="section-title">Agradecimiento</h3>
+      <p>Agradecemos sinceramente su participación. Sus respuestas son valiosas.</p>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Siguiente</button>
+
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- survey.html -->
+<!DOCTYPE html>
+<html lang="es" ng-app="encuestaApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta Estilos Musicales</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.angularjs.org/1.8.2/angular.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app/app.js"></script>
+</head>
+<body ng-controller="EncuestaController" class="container">
+
+  <h1 class="text-center">Encuesta Estilos Musicales</h1>
+
+  <!-- Vistas -->
+  <div>
+    <div ng-include="'app/views/step_cero.html'" ng-show="step === 1"></div>
+    <div ng-include="'app/views/step_one.html'" ng-show="step === 2"></div>
+    <div ng-include="'app/views/step_two.html'" ng-show="step === 3"></div>
+    <div ng-include="'app/views/step_three.html'" ng-show="step === 4"></div>
+  </div>
+
+  <!-- Indicador de Progreso -->
+  <div class="progress" ng-show="step <= 3">
+    <div class="progress-bar" role="progressbar" ng-style="{ 'width': step * 40 + '%' }"></div>
+  </div>
+
+</body>
+</html>

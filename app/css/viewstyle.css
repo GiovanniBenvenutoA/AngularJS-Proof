@@ -1,0 +1,9 @@
+.section p {
+  list-style: disc; /* Puedes cambiar 'disc' por 'circle' o 'square' según tu preferencia */
+  margin-left: 20px; /* Ajusta según sea necesario para alinear los puntos */
+}
+
+.canvas {
+  display: inline-block;
+  margin: 10px; /* Ajusta el margen entre los gráficos */
+}
